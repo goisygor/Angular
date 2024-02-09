@@ -1,5 +1,18 @@
-<router-outlet></router-outlet>
+<div>
+    <h1>
+            Minha Aplicação Angular
+    </h1>
+    <h2>Todo-List</h2>
+    <ul>
+        <li> *ngFor ="Let item of itens"> {{item}} 
+            <button (click)="removeItem(AddTarefa)">Excluir</button>
+        </li>
+    </ul>
 
-<app-header></app-header>
-<router-outlet></router-outlet>
-<app-header></app-header>
+{{tarefa}}
+
+
+    <input type="text"[(ngModel)] = "Tarefa">
+    <button (click)="AddTarefa"> "Adicionar"</button>
+
+</div>
