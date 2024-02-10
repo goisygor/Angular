@@ -1,0 +1,54 @@
+/* Estilização do container principal */
+div {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    margin-top: 50px; /* Adiciona um espaço no topo */
+  }
+  
+  /* Estilização do título principal */
+  h1 {
+    font-size: 32px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+  }
+  
+  /* Estilização do título da lista de tarefas */
+  h2 {
+    font-size: 24px; /* Tamanho da fonte */
+    color: #555; /* Cor do texto */
+    margin-bottom: 20px; /* Adiciona um espaço na parte inferior */
+  }
+  
+  /* Estilização dos itens da lista de tarefas */
+  ul li {
+    list-style: none; /* Remove os marcadores de lista */
+    margin-bottom: 10px; /* Adiciona um espaço entre os itens */
+  }
+  
+  /* Estilização do botão de exclusão */
+  button {
+    background-color: #d9534f; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda */
+    padding: 5px 10px; /* Adiciona preenchimento interno */
+    cursor: pointer; /* Muda o cursor para indicar interatividade */
+  }
+  
+  /* Estilização do campo de entrada de texto */
+  input[type="text"] {
+    padding: 5px; /* Adiciona preenchimento interno */
+    margin-right: 10px; /* Adiciona um espaço à direita */
+  }
+  
+  /* Estilização do botão de adicionar */
+  button[type="submit"] {
+    background-color: #5cb85c; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda */
+    padding: 5px 10px; /* Adiciona preenchimento interno */
+    cursor: pointer; /* Muda o cursor para indicar interatividade */
+  }
+  
+  /* Estilização do botão de adicionar ao passar o mouse */
+  button:hover {
+    opacity: 0.8; /* Reduz a opacidade ao passar o mouse */
+  }
+  
