@@ -1,9 +1,17 @@
 import { ApplicationConfig } from '@angular/core';
-import { provideRouter } from '@angular/router';
-
-import { routes } from './app.routes';
+import { Routes } from '@angular/router'; // Importe Routes e RouterModule
 import { provideClientHydration } from '@angular/platform-browser';
+import { provideRoutes } from '@angular/router'; // Importe provideRoutes para fornecer rotas
+
+
+const appRoutes: Routes = [
+
+  
+];
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), provideClientHydration()]
+  providers: [
+    provideRoutes(appRoutes), // Fornecer rotas usando a função provideRoutes
+    provideClientHydration()
+  ]
 };

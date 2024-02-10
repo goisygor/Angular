@@ -1,18 +1,13 @@
-<div>
-    <h1>
-            Minha Aplicação Angular
-    </h1>
-    <h2>Todo-List</h2>
-    <ul>
-        <li> *ngFor ="Let item of itens"> {{item}} 
-            <button (click)="removeItem(AddTarefa)">Excluir</button>
+<div> <!-- Início do container principal -->
+    <h1>Minha Aplicação Angular</h1> <!-- Título principal da aplicação -->
+    <h2>Todo-List</h2> <!-- Título da lista de tarefas -->
+    <ul> <!-- Início da lista de tarefas -->
+        <li *ngFor="let item of items">{{ item }} <!-- Item da lista de tarefas -->
+            <button (click)="removeTarefa(item)">Excluir</button> <!-- Botão para remover a tarefa -->
         </li>
-    </ul>
+    </ul> <!-- Fim da lista de tarefas -->
 
-{{tarefa}}
-
-
-    <input type="text"[(ngModel)] = "Tarefa">
-    <button (click)="AddTarefa"> "Adicionar"</button>
-
-</div>
+    <!-- Campo de entrada para adicionar nova tarefa -->
+    <input type="text" [(ngModel)]="tarefa"> <!-- Vincula a entrada do usuário à propriedade 'tarefa' -->
+    <button (click)="addTarefa()">Adicionar</button> <!-- Botão para adicionar nova tarefa -->
+</div> <!-- Fim do container principal -->
